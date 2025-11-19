@@ -15,7 +15,7 @@ public class RootController {
     @GetMapping("/")
     public ResponseEntity<Map<String, Object>> root() {
         Map<String, Object> response = new HashMap<>();
-        response.put("message", "Welcome to Employee Management API!");
+        response.put("message", "Welcome to Employee Management API");
         response.put("status", "UP");
         response.put("endpoints", Map.of(
             "employees", "/api/employees",
